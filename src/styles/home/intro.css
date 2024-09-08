@@ -1,0 +1,92 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.intro {
+    background: rgba(160, 233, 255, 1);
+    height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    height: calc(100vh - 80px);
+
+    position: relative;
+    bottom: 0;
+    /* Adjust height considering the navbar */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 10px;
+    max-width: 50%;
+}
+
+.hero-content h3 {
+    color: #00aaff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: #007bff;
+    color: white;
+}
+
+.sign-in:hover {
+    background-color: #0056b3;
+}
+
+.register {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.register:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Hero Image */
+.hero-image img {
+    /* max-width: 500px;
+    border-radius: 10px; */
+}
