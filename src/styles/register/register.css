@@ -1,101 +1,125 @@
-/* src/Register.css */
-
-.register-container {
+/* General Layout */
+.login-page {
+    background-color: #e1f5fe;
+    background: url('../../../public/assets/authPageBackground.svg');
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #e8f4f9;
-    background-image: url('../../../public/assets/authPageBackground.svg');
-    /* Add your background image URL */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    min-height: 100vh;
 }
 
-.register-card {
-    background-color: white;
-    padding: 40px 30px;
+.login-container {
+    background: rgba(205, 245, 253, 1);
+    padding: 40px;
     border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.register-title {
+h1 {
     font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.login-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    background: rgba(160, 233, 255, 1);
+    color: #1a1a1a;
     font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.role-selection {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.role-button {
-    background-color: #fff;
-    border: 2px solid #007bff;
-    color: #007bff;
-    padding: 10px 20px;
-    font-size: 1rem;
-    margin: 0 10px;
-    border-radius: 5px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    border-radius: 8px 8px 0 0;
 }
 
-.role-button.active {
-    background-color: #007bff;
-    color: #fff;
+.tab.active {
+    background-color: #29b6f6;
+    color: black;
 }
 
-.form-container {
+.login-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-label .icon-user,
+.input-label .icon-lock {
+    position: absolute;
+    left: 10px;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+}
+
+.input-label .icon-eye {
+    position: absolute;
+    right: 10px;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    cursor: pointer;
 }
 
 .input-field {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 10px 40px;
     font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
     width: 100%;
+    background-color: #f9f9f9;
 }
 
-.signup-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.signup-button:hover {
-    background-color: #0056b3;
-}
-
-.login-option {
-    margin-top: 20px;
-    font-size: 0.9rem;
+.forgot-password {
+    color: #29b6f6;
+    text-decoration: none;
 }
 
 .login-button {
-    background-color: transparent;
+    background-color: #29b6f6;
+    color: white;
     border: none;
-    color: #007bff;
-    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px;
     font-size: 1rem;
-    margin-left: 5px;
+    cursor: pointer;
 }
 
 .login-button:hover {
-    color: #0056b3;
+    background-color: #0277bd;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link span {
+    margin-right: 5px;
+}
+
+.signup-link a {
+    color: #29b6f6;
+    text-decoration: none;
+    font-weight: bold;
 }

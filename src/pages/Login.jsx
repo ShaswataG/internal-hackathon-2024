@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import UserIcon from '../assets/login/userIcon.svg';
+import HospitalIcon from '../assets/login/hospitalIcon.svg';
+import LockIcon from '../assets/login/lockIcon.png';
 
 export default function Login() {
     const [activeTab, setActiveTab] = useState('patient');
@@ -30,7 +33,8 @@ export default function Login() {
                 <form className="login-form">
                     <div className="form-group">
                         <label htmlFor="abha-number" className="input-label">
-                            <i className="icon-user"></i>
+                            {/* <i className="icon-user"></i> */}
+                            <img src={activeTab === "patient" ? UserIcon : HospitalIcon} width="20px" />
                             <input
                                 type="text"
                                 id="abha-number"
@@ -42,7 +46,8 @@ export default function Login() {
 
                     <div className="form-group">
                         <label htmlFor="password" className="input-label">
-                            <i className="icon-lock"></i>
+                            {/* <i className="icon-lock"></i> */}
+                            <img svg={LockIcon} width="20px" />
                             <input
                                 type="password"
                                 id="password"

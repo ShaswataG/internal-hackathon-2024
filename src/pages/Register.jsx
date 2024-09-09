@@ -1,46 +1,6 @@
-// import { useState } from 'react';
-
-// export default function Register() {
-//     const [selectedRole, setSelectedRole] = useState('patient');
-
-//     const handleRoleClick = (role) => {
-//         setSelectedRole(role);
-//     };
-
-//     return (
-//         <div className="register-container">
-//             <div className="register-card">
-//                 <h1 className="register-title">REGISTER</h1>
-//                 <div className="role-selection">
-//                     <button
-//                         className={`role-button ${selectedRole === 'patient' ? 'active' : ''}`}
-//                         onClick={() => handleRoleClick('patient')}
-//                     >
-//                         <i className="fas fa-user"></i> PATIENT
-//                     </button>
-//                     <button
-//                         className={`role-button ${selectedRole === 'hospital' ? 'active' : ''}`}
-//                         onClick={() => handleRoleClick('hospital')}
-//                     >
-//                         <i className="fas fa-hospital"></i> HOSPITAL
-//                     </button>
-//                 </div>
-//                 <div className="form-container">
-//                     <input type="text" placeholder="ABHA Number" className="input-field" />
-//                     <input type="password" placeholder="Password" className="input-field" />
-//                     <input type="password" placeholder="Confirm Password" className="input-field" />
-//                     <button className="signup-button">Sign Up</button>
-//                     <div className="login-option">
-//                         <p>Already have an Account?</p>
-//                         <button className="login-button">Login</button>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
 import { useState } from 'react';
+import UserIcon from '../assets/login/userIcon.svg'
+import HospitalIcon from '../assets/login/hospitalIcon.svg';
 
 export default function Login() {
     const [activeTab, setActiveTab] = useState('patient');
@@ -72,7 +32,8 @@ export default function Login() {
                 <form className="login-form">
                     <div className="form-group">
                         <label htmlFor="abha-number" className="input-label">
-                            <i className="icon-user"></i>
+                            {/* <i className="icon-user"></i> */}
+                            <img src={activeTab === "patient" ? UserIcon : HospitalIcon} width="20px" />
                             <input
                                 type="text"
                                 id="abha-number"

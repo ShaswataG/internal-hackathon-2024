@@ -33,7 +33,7 @@ const servicesData = [
 
 export default function Services() {
     return (
-        <section className="services-section">
+        <section id="services" className="services-section">
             <div className="services-header">
                 <h2>Services</h2>
                 <p>

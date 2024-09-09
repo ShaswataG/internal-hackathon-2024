@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Intro() {
     const navigate = useNavigate();
     return (
-        <div className="intro">
+        <div id="intro" className="intro">
             <section className="hero">
                 <div className="hero-content">
                 <h3>Best Hospitals Near You</h3>

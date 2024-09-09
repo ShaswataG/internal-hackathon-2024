@@ -10,10 +10,10 @@ export default function Navbar() {
                 <nav className="navbar">
                     <div onClick={() => { navigate('/') }} className="logo">MediAssist</div>
                     <ul>
-                        <li><a href="/">Home</a></li>
+                        <li><a href="#intro">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
                         <li className='navbar--login-button'><a href="/login">Login</a></li>
                         <li><button onClick={() => { navigate('/register') }} className="join-button">Join Us</button></li>
                     </ul>

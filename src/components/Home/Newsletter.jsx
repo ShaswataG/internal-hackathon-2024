@@ -9,7 +9,7 @@ export default function Newsletter() {
     };
 
     return (
-        <div className="newsletter-container">
+        <div id="newsletter" className="newsletter-container">
             <h4>Newsletter</h4>
             <h2>JOIN US</h2>
             <p>
