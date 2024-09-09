@@ -8,6 +8,8 @@ import './styles/home/intro.css';
 import './styles/home/about.css';
 import './styles/home/services.css';
 import './styles/home/newsletter.css';
+import './styles/login/login.css';
+import './styles/register/register.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

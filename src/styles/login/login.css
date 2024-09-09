@@ -1,0 +1,125 @@
+/* General Layout */
+.login-page {
+    background-color: #e1f5fe;
+    background: url('../../../public/assets/authPageBackground.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background: rgba(205, 245, 253, 1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.login-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    background: rgba(160, 233, 255, 1);
+    color: #1a1a1a;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+}
+
+.tab.active {
+    background-color: #29b6f6;
+    color: white;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-label .icon-user,
+.input-label .icon-lock {
+    position: absolute;
+    left: 10px;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+}
+
+.input-label .icon-eye {
+    position: absolute;
+    right: 10px;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    cursor: pointer;
+}
+
+.input-field {
+    padding: 10px 40px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    color: #29b6f6;
+    text-decoration: none;
+}
+
+.login-button {
+    background-color: #29b6f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0277bd;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link span {
+    margin-right: 5px;
+}
+
+.signup-link a {
+    color: #29b6f6;
+    text-decoration: none;
+    font-weight: bold;
+}
