@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.search {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 600px;
+}

@@ -1,0 +1,22 @@
+.charts-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow charts to wrap if they overflow */
+  /*gap: 20px;  Add space between the charts */
+  justify-content: space-around; /* Distribute charts evenly */
+}
+
+.report-chart {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 45%; /* Adjust the width to fit multiple charts on the same row */
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .report-chart {
+    width: 100%; /* For smaller screens, make each chart take full width */
+  }
+}

@@ -1,0 +1,32 @@
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 220px; /* Fixed width for consistency */
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.patient-card h3 {
+  color: #2ed573; /* Patient-specific color */
+}
+
+.doctor-card h3 {
+  color: #ff4757; /* Doctor-specific color */
+}
+
+p {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+span {
+  font-size: 14px;
+  color: #777;
+}

@@ -1,0 +1,22 @@
+.hospital-overview {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.hospital-overview div {
+  background-color: #f1f2f6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.gender-distribution {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 400px;
+}

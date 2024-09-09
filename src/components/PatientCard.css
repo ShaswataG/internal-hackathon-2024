@@ -1,0 +1,22 @@
+.patient-card h3 {
+    color: #2ed573;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  
+  p {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  span {
+    font-size: 14px;
+    color: #777;
+  }
+  

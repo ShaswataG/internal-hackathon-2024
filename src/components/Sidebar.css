@@ -1,0 +1,31 @@
+.sidebar {
+  width: 250px;
+  background-color: #5A9FE2;
+  height: 200vh;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal; /* Ensures sections like logout are at the bottom */
+}
+
+.sidebar h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #007bff;
+  border-radius: 8px;
+}
